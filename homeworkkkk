@@ -1,0 +1,71 @@
+'''
+qn 1
+'''
+
+num1 = input("Enter number 1: ")
+num2 = input("Enter number 2: ")
+print("Bigger number is {}".format(max(num1, num2)))
+
+'''
+qn 2
+'''
+days = ["monday", "tuesday", "wednesday", "thursday", "friday", "saturday", "sunday"]
+
+input = int(input("Enter a day: "))
+print(days[input - 1])
+'''
+qn 3
+'''
+import random
+
+for i in range(3):
+  print(random.randint(0, 6))
+'''
+qn 4
+'''
+dogage = int(input("age of dog in years: "))
+humanage = 0
+if dogage <= 2:
+  humanage = dogage * 12
+elif dogage > 2:
+  humanage = 24 + ((dogage - 2) * 6)
+print(humanage)
+'''
+qn 5
+'''
+total = 0
+numbers = [2, 5, 3, 6, 2, 3, 6, 4]
+for i in numbers:
+  total += i
+'''
+qn 6
+'''
+cost = 0
+pas = int(input("How many passengers: "))
+dis = int(input("Distance (miles): ")) - 1
+cost += 3 + (dis * 2)
+if pas >= 5:
+  cost = (cost / 100) * 150
+print(round(cost, 2))
+'''
+qn 7
+'''
+numberofteddy = int(input("Number of teddy bears: "))
+numberhour = int(input("Number of hours worked: "))
+
+pteddy = numberofteddy * 2
+phour = numberhour * 5
+
+print("${}".format(max(pteddy, phour)))
+
+'''
+qn 8
+'''
+length_1 = float(input("Enter the first length of the triangle: "))
+length_2 = float(input("Enter the second length of the triangle: "))
+length_3 = float(input("Enter the third length of the triangle: "))
+
+if length_1 == length_2 or length_2 == length_3 or length_1 == length_3:
+  print("The triangle is isosceles.")
+else:
+  print("The triangle is not isosceles.")
